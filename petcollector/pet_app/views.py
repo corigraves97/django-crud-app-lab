@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Pet
 
 def home(request):
@@ -19,9 +19,16 @@ def pet_detail(request, pet_id):
         'pet': pet
     })
 
-def PetCreate(CreateView):
+class PetCreate(CreateView):
     model = Pet
     fields = '__all__'
 
+class PetUpdate(UpdateView):
+    model = Pet
+    fields = ['type', 'breed', 'fun_fact', 'age']
+
+class PetDelete(DeleteView):
+    model = Pet
+    success_url = '/collection/'
 
 # Create your views here.

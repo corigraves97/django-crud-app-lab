@@ -24,6 +24,10 @@
     {% endif %}
     <p>{{ pet.fun_fact }}</p>
   </div>
+  <div class="cat-actions">
+    <a href="{% url 'pet-update' pet.id %}" class="btn warn">Edit</a>
+    <a href="{% url 'pet-delete' pet.id %}" class="btn danger">Delete</a>
+  </div>
 </section>
 {% endblock %}
 
