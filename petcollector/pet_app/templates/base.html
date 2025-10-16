@@ -20,7 +20,9 @@
       </div>
       <nav>
         <ul>
-          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'pet-index' %}">Collection</a></li>
+          <li><a href="{% url 'pet-create' %}">Add a Pet!</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
         </ul>
       </nav>
     </header>

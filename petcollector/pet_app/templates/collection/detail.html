@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/collection/pet-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="pet-container">
+  <div class="pet-img">
+    {% if pet.image %}
+      <img src="{{ pet.image.url }}" alt="{{ pet.name }}">
+    {% else %}
+      <img src="{% static 'images/default-pet.svg' %}" alt="{{ pet.name }}">
+    {% endif %}
+  </div>
+
+  <div class="pet-details">
+    <h1>{{ pet.name }}</h1>
+    {% if pet.age > 0 %}
+      <h2>A {{ pet.age }} year old {{ pet.breed }}</h2>
+    {% else %}
+      <h2>A {{ pet.breed }} kitten.</h2>
+    {% endif %}
+    <p>{{ pet.fun_fact }}</p>
+  </div>
+</section>
+{% endblock %}
+

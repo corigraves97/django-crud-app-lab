@@ -1,0 +1,31 @@
+.pet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  height: 10px;
+}
+
+.pet-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.pet-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pet-details h2 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.pet-details p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
