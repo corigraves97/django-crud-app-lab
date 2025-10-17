@@ -3,29 +3,41 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  height: 10px;
+  gap: 20px; /* Adds spacing between image, details, actions */
 }
 
-.pet-img img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  margin-bottom: 20px;
+.pet-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 
-.pet-details h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.playdate-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto; /* separates it from the pet-container */
 }
 
-.pet-details h2 {
-  font-size: 1.2rem;
-  color: #555;
+.playdate-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.pet-details p {
-  font-size: 1rem;
+.playdate-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.playdate-card p {
+  margin: 5px 0;
+}
+
+.playdate-actions {
+  display: flex;
+  gap: 10px;
   margin-top: 10px;
 }
