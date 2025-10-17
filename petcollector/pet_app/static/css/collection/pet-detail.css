@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  gap: 20px; /* Adds spacing between image, details, actions */
+  gap: 20px; 
 }
 
 .pet-actions {
@@ -15,7 +15,7 @@
 .playdate-container {
   width: 100%;
   max-width: 600px;
-  margin: 30px auto; /* separates it from the pet-container */
+  margin: 30px auto; 
 }
 
 .playdate-cards {
